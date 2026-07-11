@@ -1,0 +1,127 @@
+:root {
+    body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    /* 1. Add your custom picture file name below */
+    background-image: url('pexels-paulofreitas-14547073.jpg'); 
+    
+    /* 2. Professional formatting scaling constraints */
+    background-size: cover;        /* Scales the image to fill the whole screen */
+    background-position: center;   /* Centers the image perfectly */
+    background-repeat: no-repeat;  /* Prevents the image from repeating like a tile */
+    background-attachment: fixed;  /* Keeps background locked while scrolling */
+    
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+body {
+    background-image: url('pexels-paulofreitas-14547073.jpg');
+    background-size: 100%; /* Forces the image to fill the viewport */
+    background-repeat: no-repeat;
+
+    /* CHANGE THIS LINE TO CROP: */
+    background-position: center;   /* Crops equally from all outer edges */
+    /* background-position: top; */    /* Crops out the bottom, focuses on the top */
+    /* background-position: bottom; */ /* Crops out the top, focuses on the bottom */
+    /* background-position: 20% 40%; */ /* Custom focus crop (X-axis % and Y-axis %) */
+}
+
+.container {
+    background-color: rgba(23, 33, 51, 0.85); /* Makes the card slightly transparent */
+    backdrop-filter: blur(10px);               /* Blurs the picture behind the card */
+    
+    /* Keep your existing padding, border-radius, etc. below this line */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 440px;
+    box-sizing: border-box;
+}
+
+
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--card-dark);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+}
+
+.hidden { display: none !important; }
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0 1.25rem 0;
+    border-radius: 6px;
+    border: 1px solid #475069;
+    background-color: #0f162a;
+    color: white;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--accent-blue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover { opacity: 0.9; }
+
+.balance-card {
+    background: linear-gradient(135deg, #1e298a, #3e3bf6);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.balance-card p { font-size: 2rem; margin: 0; font-weight: bold; }
+
+.btn-group { display: flex; gap: 10px; }
+
+.btn-deposit { background-color: var(--emerald); }
+
+.btn-withdraw { background-color: var(--rose); }
+
+.btn-logout { background-color: #67648b; width: auto; padding: 0.5rem 1rem; }
+
+.header { display: flex; justify-content: space-between; align-items: center; }
+
+.error { color: var(--rose); font-size: 0.875rem; margin-top: -0.5rem; min-height: 20px; }
+
+ul { list-style: none; padding: 0; max-height: 150px; overflow-y: auto; }
+
+li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #333855de;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+}
